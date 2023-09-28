@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<unistd.h>
+void Single()
+{
+ fork();
+ printf("Single Fork Called");
+}
+void Multiple()
+{
+ fork();
+ printf("Multi Fork Called");
+ fork();
+ printf("HELLO");
+}
+int main(void)
+{
+ Single();
+ Multiple(); 
+ return 0;
+}
