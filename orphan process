@@ -7,7 +7,7 @@ int main()
 {
     pid_t p;
     p=fork();
-    int i;
+
 
     if(p==0)
     {
